@@ -18,52 +18,50 @@
     </div>
 
     <div class="row">
-      <div class="row">
-        <div id="aboutBnr" class="col-lg-4">
-          <div class="title-head">
-            <h2>About</h2>
-            <a class="setting-btn" href="javascript:void(0)">
-              <span></span>
-              <span></span>
-              <span></span>
-            </a>
-          </div>
-
-          <div class="aboutBnr-thumb"></div>
-
-          <h1>Lorem ipsum dolor sit amet, consectetur</h1>
-
-          <!-- <h1>Main Skill</h1> -->
-
-          <div class="aboutBnr-item">
-            <p class="aboutBnr-element">#Adobe_Photoshop</p>
-            <p class="aboutBnr-element">#Adobe_illustrator</p>
-            <p class="aboutBnr-element">#UI/UX_Design</p>
-            <p class="aboutBnr-element">#Web_Developer</p>
-            <p class="aboutBnr-element">#Package_Design</p>
-            <p class="aboutBnr-element">#Furniture_Design</p>
-            <p class="aboutBnr-element">#Graphic_Design</p>
-            <p class="aboutBnr-element">#Product_Branding</p>
-          </div>
+      <div id="aboutBnr" class="col-lg-4">
+        <div class="title-head">
+          <h2>About</h2>
+          <a class="setting-btn" href="javascript:void(0)">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
         </div>
 
-        <div id="worksBnr" class="col-lg-8">
-          <div class="title-head">
-            <h2>Works</h2>
-            <a class="setting-btn" href="javascript:void(0)">
-              <span></span>
-              <span></span>
-              <span></span>
-            </a>
-          </div>
+        <div class="aboutBnr-thumb"></div>
 
-          <h1>
-            Lorem ipsum dolor sit amet,<br />
-            consectetur
-          </h1>
+        <h1>Lorem ipsum dolor sit amet, consectetur</h1>
 
-          <CardSlide />
+        <!-- <h1>Main Skill</h1> -->
+
+        <div class="aboutBnr-item">
+          <p class="aboutBnr-element">#Adobe_Photoshop</p>
+          <p class="aboutBnr-element">#Adobe_illustrator</p>
+          <p class="aboutBnr-element">#UI/UX_Design</p>
+          <p class="aboutBnr-element">#Web_Developer</p>
+          <p class="aboutBnr-element">#Package_Design</p>
+          <p class="aboutBnr-element">#Furniture_Design</p>
+          <p class="aboutBnr-element">#Graphic_Design</p>
+          <p class="aboutBnr-element">#Product_Branding</p>
         </div>
+      </div>
+
+      <div id="worksBnr" class="col-lg-8">
+        <div class="title-head">
+          <h2>Works</h2>
+          <a class="setting-btn" href="javascript:void(0)">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+
+        <h1>
+          Lorem ipsum dolor sit amet,<br />
+          consectetur
+        </h1>
+
+        <CardSlide />
       </div>
     </div>
   </div>
@@ -81,4 +79,5 @@ import CardSlide from '@/components/Container/CardSlide.vue'
 export default class extends Vue {}
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+</style>
