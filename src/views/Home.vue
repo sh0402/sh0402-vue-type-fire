@@ -68,15 +68,24 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+// import { Component, Vue } from 'vue-property-decorator'
+// import CardSlide from '@/components/Container/CardSlide.vue'
+
+// @Component({
+//   components: {
+//     CardSlide
+//   }
+// })
+// export default class extends Vue {}
+
+import { defineComponent } from '@vue/composition-api'
 import CardSlide from '@/components/Container/CardSlide.vue'
 
-@Component({
+export default defineComponent({
   components: {
     CardSlide
   }
 })
-export default class extends Vue {}
 </script>
 
 <style lang="scss">

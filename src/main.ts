@@ -3,7 +3,7 @@ import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 import store from './store'
-import 'swiper/css/swiper.css'
+import './plugins/firebase'
 
 Vue.config.productionTip = false
 

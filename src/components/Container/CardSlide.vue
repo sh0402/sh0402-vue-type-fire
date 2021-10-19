@@ -77,11 +77,36 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+// import { Component, Vue } from 'vue-property-decorator'
+// // import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 // import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
+// import SwiperCore, { Pagination } from 'swiper'
+
+// SwiperCore.use([Pagination])
+
+// @Component({
+//   components: {
+//     Swiper,
+//     SwiperSlide
+//   },
+//   data () {
+//     return {
+//       SwiperOptions: {
+//         slidesPerView: 2.5,
+//         spaceBetween: 10,
+//         pagination: {
+//           el: '.swiper-pagination',
+//           clickable: true
+//         }
+//       }
+//     }
+//   }
+// })
+// export default class CardSlide extends Vue {}
+import { defineComponent } from '@vue/composition-api'
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 
-@Component({
+export default defineComponent({
   components: {
     Swiper,
     SwiperSlide
@@ -99,7 +124,6 @@ import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
     }
   }
 })
-export default class CardSlide extends Vue {}
 </script>
 
 <style lang="scss"></style>

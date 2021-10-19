@@ -51,32 +51,37 @@
             <router-link to="/about">About</router-link>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Work</a>
+            <router-link to="/projects">Projects</router-link>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Contact</a>
+            <router-link to="/contact">Contact</router-link>
           </li>
         </ul>
       </div>
 
       <div class="sns">
-        <a href="https://www.instagram.com/daily_soot" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
+
       </div>
     </div>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import { Component, Vue } from 'vue-property-decorator'
+import Navi from '@/components/Head/Navi.vue'
+import Footer from '@/components/Foot/Footer.vue'
+import GalleryData from '@/assets/data/galleryData.js'
 
-  @Component
-export default class extends Vue {
-
-}
+@Component({
+  components: {
+    Navi,
+    Footer
+  },
+  data () {
+    return {
+      GalleryData: GalleryData
+    }
+  }
+})
+export default class Container extends Vue {}
 </script>
-
-<style scoped>
-
-</style>
