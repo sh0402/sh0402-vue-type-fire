@@ -1,10 +1,5 @@
 <template>
   <div class="container">
-    <button @click="test">
-      <span class="material-icons">
-        perm_identity
-      </span>
-    </button>
     <AuthSign />
   </div>
 </template>
@@ -24,17 +19,11 @@ declare module 'vue/types/vue' {
   components: { AuthSign }
 })
 export default class extends Vue {
-  async test () {
+  async test (): Promise<void> {
     const ref = this.$firebase.firestore().collection('test').doc('aaaa')
     await ref.set({ a: 111 })
     const doc = await ref.get()
     console.log(doc.data())
-  }
-
-  setup () {
-    return {
-
-    }
   }
 }
 </script>

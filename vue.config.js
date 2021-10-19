@@ -5,5 +5,8 @@ module.exports = {
         additionalData: '@import "@/assets/styles/_variabled.scss";'
       }
     }
-  }
+  },
+  devServer: {
+  	overlay: false,
+  },
 }
